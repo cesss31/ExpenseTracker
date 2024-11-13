@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="section" id="carousel-section">
+    <div class="container">
+        <div id="carousel-demo" class="carousel pb-6 pt-6" style="overflow: hidden">
+            <div class="item-1">
+                <div class="columns is-vcentered pt-6"> <!-- Vertical centering applied here -->
+                    <div class="column is-full-mobile is-half-tablet is-half-desktop pt-6">
+                        <h2 class="title is-2 has-text-weight-bold">Take Control of Your Finances!</h2>
+                        <p class="is-size-5">
+                            Managing your expenses has never been easier! Our platform provides you with a comprehensive suite of tools designed to help you track, analyze, and optimize your spending. Whether you're a small business owner or an individual looking to budget smarter, our user-friendly interface empowers you to make informed financial decisions. Say goodbye to financial stress and hello to clarity and confidence in your financial journey!
+                        </p>
+                        <br>
+                        <div class="buttons is-left">
+                            <a href="{{ url_for('register') }}" class="button is-medium is-primary">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="column is-full-mobile is-half-tablet is-half-desktop">
+                        <figure class="image is-4by3">
+                            <img src="https://plus.unsplash.com/premium_photo-1680721442350-6f91fbe7df3f" alt="Slide Image" class="is-rounded" />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
